@@ -1,0 +1,201 @@
+
+\documentclass{beamer} 
+\usepackage{blindtext, graphicx}
+\usepackage[utf8]{inputenc}
+
+\usepackage{enumerate}
+
+% Citation
+%\usepackage{cite}
+
+% Graphics
+\usepackage{graphicx}
+\graphicspath{{images/}}
+\usepackage{subfigure}
+\DeclareGraphicsExtensions{.pdf,.jpeg,.png,.eps}
+\usepackage{booktabs}
+
+% Math
+%\usepackage[cmex10]{amsmath}
+
+% Urls
+\usepackage{url}
+
+% Tables
+\usepackage{booktabs}
+
+% Optional packages
+%\usepackage{array}
+%\usepackage{mdwmath}
+%\usepackage{mdwtab}
+%\usepackage{eqparbox}
+%\usepackage[tight,footnotesize]{subfigure}
+%\usepackage[caption=false]{caption}
+%\usepackage[font=footnotesize]{subfig}
+%\usepackage[caption=false,font=footnotesize]{subfig}
+
+% correct bad hyphenation here
+%\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+
+
+
+\usepackage{res/theme/beamerthemeExecushares}
+\usepackage[style=numeric]{biblatex}
+\setbeamertemplate{bibliography item}{\insertbiblabel}
+\bibliography{presentation}
+
+
+%\setbeamertemplate{bibliography item}{\insertbiblabel}
+
+
+\newcommand {\framedgraphic}[2] {
+	\begin{frame}{#1}
+	\begin{center}
+		\includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{#2}
+	\end{center}
+\end{frame}
+}
+
+
+\setlength{\abovecaptionskip}{0pt plus 3pt minus 2pt}
+\setlength{\belowcaptionskip}{0pt plus 3pt minus 2pt}
+
+
+
+\hfuzz=100pt
+\vfuzz=100pt
+
+
+\setcounter{showSlideNumbers}{1}
+
+
+
+\title{Impact of HEVC encoding presets for resolutions up to UHD-1}
+\author{Christopher Krämmer \inst{1} \and Serge Molina \inst{2} \and Anton Schubert \inst{1}}
+\institute[shortinst]{\inst{1} Institute for Media Technology, TU Ilmenau for Christopher Krämmer \and \inst{2} Systèmes Robotiques et Interactifs UPSSITECH for Serge Molina}
+
+\begin{document}
+
+
+
+\setcounter{framenumber}{-1}
+\setcounter{showProgressBar}{1}
+\setcounter{showSlideNumbers}{0}
+\frame{\titlepage}
+
+
+\begin{frame}
+	\frametitle{Introduction}
+	\input{sections/abstract}
+\end{frame}
+
+
+\setcounter{framenumber}{-1}
+\setcounter{showProgressBar}{1}
+\setcounter{showSlideNumbers}{0}
+\begin{frame}
+\frametitle{Contents}
+\begin{enumerate}
+	\item Test Preparation
+	
+	\begin{enumerate}
+		\item Video Selection
+		\item Encoding Parameters
+		\item Test Setup
+	\end{enumerate}
+	
+	
+	\item Test Results and Analysis
+	\begin{enumerate}
+		\item Participants population
+		\item Collected MOS analysis
+		\item Additional data analysis
+		\item Regions classification
+	\end{enumerate}
+	
+	\item Conclusion
+	
+\end{enumerate}
+\end{frame}
+
+
+
+\section{Test Preparation}
+\begin{frame}
+	\input{sections/preparation_introduction}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Video Selection}
+	\input{sections/video_selection}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Encoding Parameters}
+	\label{sec:encoding}
+	\input{sections/encoding}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Test Setup}
+	\label{sec:test_setup}
+	\input{sections/test_setup}
+\end{frame}
+
+
+
+\section{Test Results and Analysis}
+\begin{frame}
+	\input{sections/results_introduction}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Participants population}
+	\label{sec:participant_population}
+	\input{sections/participant_population}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Collected MOS analysis}
+	\label{sec:ratings}
+	\input{sections/ratings}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Additional data analysis}
+	\label{sec:features}
+	\input{sections/features}
+\end{frame}
+
+
+\section{Conclusion}
+
+\begin{frame}
+	\input{sections/conclusion}
+\end{frame}
+%\appendices
+%\section{Proof of the First Zonklar Equation}
+
+% use section* for acknowledgement
+%\section*{Acknowledgment}
+%The authors would like to thank...
+
+% trigger a \newpage just before the given reference
+% number - used to balance the columns on the last page
+% adjust value as needed - may need to be readjusted if
+% the document is modified later
+%\IEEEtriggeratref{8}
+% The "triggered" command can be changed if desired:
+%\IEEEtriggercmd{\enlargethispage{-5in}}
+
+% References
+\printbibliography
+
+\end{document}
+
+

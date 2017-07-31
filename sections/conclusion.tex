@@ -1,0 +1,14 @@
+\large{Conclusion}
+We found that we can predict the be accurately predicted using the \textit{VMAF} metric.
+Our aggressive optimization approach with the "expert" encoding preset pays off at higher bitrates but degrades visual quality for low bitrates. This suggests that high-effort multi-pass encodings like ours mainly benefit high resolution content at large bitrates, where the absolute gain can also be larger.
+
+
+\large{Future Work}
+Improvements of the automation framework: the source preparation step could directly transcode the original material to a constant framerate and colour-subsampling in a lossless format to avoid a further preprocessing step for the VMAF metrics.
+As we have seen in section \ref{sec:additional_data}, mouse behaviour and user feedback hasn't been analysed as deeply as desired. 
+Deeper analysis may be performed in a revision of this paper or another more complete one.
+
+%A longer test or a sectioned test with more participants would provide a better sampling of the bitrate-MOS space and allow for more detailed analysis.
+
+A similar experiment could be done with a specific focus on content-specific encoding approaches like \cite{cock:2016:titleencode}.
+
