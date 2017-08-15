@@ -4,7 +4,7 @@
 
 \begin{itemize}
 \item Large variety between the reference video files
-\item Use \textit{UHD-1} content from public video databases 
+\item Get \textit{UHD-1} content from public video databases with high quality
 \item Sequence: length of 10 seconds (HAS-segment), no cuts, smallest permitted frame rate: 50 fps
 \end{itemize}
 
@@ -16,11 +16,20 @@
 \large{Dataset Preparation}
 
 \begin{itemize}
-\item Database: Harmonic \cite{web:harmonic}, Cable Labs \cite{web:cablelabs}, Blender Foundation \cite{web:bbb}. ProRes...
-\item Main challenge: Find periods of video without cuts that are 10 seconds or longer
-\item Preselection with a 4k screen: Get a large variety between the reference video files to evoke different encoding properties
+	
+\item Main challenge: 
+\newline Find periods of video without cuts that are 10 sec or longer
+\item Database:
+\newline Harmonic \cite{web:harmonic}, Cable Labs \cite{web:cablelabs}, Blender Foundation \cite{web:bbb}.
+\item Preselection with a 4k screen:
+\newline Get a large variety between the reference video files to evoke different encoding properties
 
 \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Video Selection}
 
 \begin{figure}[hbt!]
 	\begin{center}
@@ -28,35 +37,34 @@
 		
 		\subfigure[Air Show]{%
 			\label{fig:airshow}
-			\includegraphics[width=0.2\textwidth]{images/AirShow}
+			\includegraphics[width=0.3\textwidth]{images/AirShow}
 		}%
 		\subfigure[Big Buck Bunny]{%
 			\label{fig:bbb}
-			\includegraphics[width=0.2\textwidth]{images/Bbb}
-		}\\ %  ------- End of the first row ----------------------%
+			\includegraphics[width=0.3\textwidth]{images/Bbb}
+		}
 		\subfigure[Fjord]{%
 			\label{fig:Fjord}
-			\includegraphics[width=0.2\textwidth]{images/Fjord}
-		}%
+			\includegraphics[width=0.3\textwidth]{images/Fjord}
+		}\\ %  ------- End of the first row ----------------------%
 		\subfigure[Moment of Intensity]{%
 			\label{fig:MomentOfIntensity}
-			\includegraphics[width=0.2\textwidth]{images/MomentOfIntensity}
-		}\\ %  ------- End of the second row ----------------------%		
+			\includegraphics[width=0.3\textwidth]{images/MomentOfIntensity}
+		}		
 		\subfigure[Snow Monkeys]{%
 			\label{fig:SnowMonkeys}
-			\includegraphics[width=0.2\textwidth]{images/SnowMonkeys}
+			\includegraphics[width=0.3\textwidth]{images/SnowMonkeys}
 		}%
 		\subfigure[Streets of India]{%
 			\label{fig:StreetsOfIndia}
-			\includegraphics[width=0.2\textwidth]{images/StreetsOfIndia}
+			\includegraphics[width=0.3\textwidth]{images/StreetsOfIndia}
 		}%
 		%
 	\end{center}
-	\caption{%
-		Selection of frames contained in the reference videos to show the variety of the content.
-	}%
-	\label{fig:OverviewReferenceSequences}
+
 \end{figure}
+
+Selection of frames contained in the reference videos to show the variety of the content.
 \end{frame}
 
 
@@ -65,10 +73,11 @@
 
 \begin{figure}[hbt!]
 	\centering
-	\includegraphics[width=3.0in]{SITI}
-	\caption{Spatial and temporal information of the reference video files. Each dot represents one frame. In areas with high densities the color is stronger.}
-	\label{fig:SITI}
+	\includegraphics[width=2.9in]{SITI}
 \end{figure}
+
+Spatial and temporal information of the reference video files.
+\newline Each dot represents one frame.
 
 
 \end{frame}

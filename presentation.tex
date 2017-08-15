@@ -8,10 +8,6 @@
 % Citation
 %\usepackage{cite}
 
-% References
-%\bibliographystyle{IEEEtran}
-%\bibliography{IEEEabrv,paper}
-
 % Graphics
 \usepackage{graphicx}
 \graphicspath{{images/}}
@@ -47,6 +43,12 @@
 
 \usepackage{res/theme/beamerthemeExecushares}
 \usepackage[style=numeric]{biblatex}
+%\usepackage[
+%backend=biber,
+%style=numeric,
+%]{biblatex}
+
+\addbibresource{presentation.bib}
 \setbeamertemplate{bibliography item}{\insertbiblabel}
 \bibliography{presentation}
 
@@ -76,7 +78,8 @@
 
 
 
-\title{Impact of HEVC encoding presets for resolutions up to UHD-1}
+\title{Impact of HEVC encoding presets \\
+	for resolutions up to UHD-1}
 \author{Christopher Krämmer \inst{1} \and Serge Molina \inst{2} \and Anton Schubert \inst{1}}
 \institute[shortinst]{\inst{1} Institute for Media Technology, TU Ilmenau for Christopher Krämmer \and \inst{2} Systèmes Robotiques et Interactifs UPSSITECH for Serge Molina}
 
@@ -127,9 +130,9 @@
 
 
 \section{Test Preparation}
-\begin{frame}
-	\input{sections/preparation_introduction}
-\end{frame}
+%\begin{frame}
+%	\input{sections/preparation_introduction}
+%\end{frame}
 
 
 \input{sections/video_selection}
