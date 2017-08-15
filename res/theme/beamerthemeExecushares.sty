@@ -149,7 +149,10 @@
 			%\fill[color=ExecusharesRed] (0, 6cm) rectangle(\slidewidth,\slideheight);
 
 			% draw the actual text
-			\node at (0.5\slidewidth, 0.5\slideheight + 1.5cm) {\color{ExecusharesRed}\huge\inserttitle};
+			\node at (0.5\slidewidth, 0.5\slideheight + 1.5cm)
+			[anchor=center, align=center, text width=\linewidth, 
+			 font=\color{ExecusharesRed}]
+			{\huge\inserttitle};
 			\node at (0.5\slidewidth, 0.5\slideheight + 0.75cm) {\color{ExecusharesBlue}\large\insertsubtitle};
  
 			\node at (0.5\slidewidth, 4cm) {\color{ExecusharesBlue} \footnotesize \textbf{\insertauthor}};

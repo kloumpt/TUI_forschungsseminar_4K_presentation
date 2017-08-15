@@ -1,4 +1,3 @@
-
 \documentclass{beamer} 
 \usepackage{blindtext, graphicx}
 \usepackage[utf8]{inputenc}
@@ -21,40 +20,14 @@
 % Urls
 \usepackage{url}
 
-% Tables
-\usepackage{booktabs}
-
-% Optional packages
-%\usepackage{array}
-%\usepackage{mdwmath}
-%\usepackage{mdwtab}
-%\usepackage{eqparbox}
-%\usepackage[tight,footnotesize]{subfigure}
-%\usepackage[caption=false]{caption}
-%\usepackage[font=footnotesize]{subfig}
-%\usepackage[caption=false,font=footnotesize]{subfig}
-
-% correct bad hyphenation here
-%\hyphenation{op-tical net-works semi-conduc-tor}
-
-
-
-
-
+% Theme
 \usepackage{res/theme/beamerthemeExecushares}
-\usepackage[style=numeric]{biblatex}
-%\usepackage[
-%backend=biber,
-%style=numeric,
-%]{biblatex}
 
+% Bibliography
+\usepackage[style=numeric,sorting=none]{biblatex}
 \addbibresource{presentation.bib}
 \setbeamertemplate{bibliography item}{\insertbiblabel}
 \bibliography{presentation}
-
-
-%\setbeamertemplate{bibliography item}{\insertbiblabel}
-
 
 \newcommand {\framedgraphic}[2] {
 	\begin{frame}{#1}
@@ -64,22 +37,15 @@
 \end{frame}
 }
 
-
 \setlength{\abovecaptionskip}{0pt plus 3pt minus 2pt}
 \setlength{\belowcaptionskip}{0pt plus 3pt minus 2pt}
-
-
 
 \hfuzz=100pt
 \vfuzz=100pt
 
-
 \setcounter{showSlideNumbers}{1}
 
-
-
-\title{Impact of HEVC encoding presets \\
-	for resolutions up to UHD-1}
+\title{Impact of HEVC encoding presets\\ for resolutions up to UHD-1}
 \author{Christopher Krämmer \inst{1} \and Serge Molina \inst{2} \and Anton Schubert \inst{1}}
 \institute[shortinst]{\inst{1} Institute for Media Technology, TU Ilmenau for Christopher Krämmer \and \inst{2} Systèmes Robotiques et Interactifs UPSSITECH for Serge Molina}
 
@@ -137,12 +103,7 @@
 
 \input{sections/video_selection}
 
-
-\begin{frame}
-	\frametitle{Encoding Parameters}
-	\label{sec:encoding}
-	\input{sections/encoding}
-\end{frame}
+\input{sections/encoding}
 
 \begin{frame}
 	\frametitle{Test Setup}
@@ -150,26 +111,10 @@
 	\input{sections/test_setup}
 \end{frame}
 
+\input{sections/participant_population}
 
+\input{sections/ratings}
 
-\section{Test Results and Analysis}
-\begin{frame}
-	\input{sections/results_introduction}
-\end{frame}
-
-
-\begin{frame}
-	\frametitle{Participants population}
-	\label{sec:participant_population}
-	\input{sections/participant_population}
-\end{frame}
-
-
-\begin{frame}
-	\frametitle{Collected MOS analysis}
-	\label{sec:ratings}
-	\input{sections/ratings}
-\end{frame}
 
 
 \begin{frame}
@@ -201,7 +146,6 @@
 
 % References
 \printbibliography
-
 \end{document}
 
 
